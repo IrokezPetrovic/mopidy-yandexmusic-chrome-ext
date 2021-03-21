@@ -1,0 +1,43 @@
+div.play_button_container {
+    display: block;
+    display: none;
+    border-radius: 40px;
+    width: 75px;
+    padding: 5px;
+    padding-bottom: 20px;
+    /* border: 2px solid black; */
+    background-color: #01010140;
+}
+
+div.playlist.playlist_selectable:hover div.play_button_container {
+    display: block;
+}
+
+button.mopidy_playlist_action {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: #08d58f;
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    margin: 0px 3px;
+    transition-property: transform;
+    transition-duration: 100ms;
+    transition-timing-function: ease;
+}
+
+button.mopidy_playlist_action:hover {
+    transform: scale(1.2);
+}
+
+button.mopidy_playlist_add {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/icons/playlist_add.svg');
+}
+
+button.mopidy_playlist_play {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/icons/playlist_play.svg');
+}

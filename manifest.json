@@ -1,0 +1,40 @@
+{
+    "name": "YandexMusic for mopidy",
+    "description": "Yandex Music for Mopidy",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://music.yandex.ru/*"
+            ],
+            "js": [
+                "ymusic_injected.js"
+            ],
+            "css": [
+                "ymusic_injected.css"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "ui.html"
+    },
+    "background": {
+        "service_worker": "worker.js"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "/icons/*.png",
+                "/icons/*.svg"
+            ],
+            "matches": [                
+                "https://music.yandex.ru/*"
+            ]
+        }
+    ]
+}
