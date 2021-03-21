@@ -9,7 +9,7 @@ div.play_button_container {
     background-color: #01010140;
 }
 
-div.playlist.playlist_selectable:hover div.play_button_container {
+div.playlist.playlist_selectable:hover div.play_button_container, div.album.album_selectable:hover div.play_button_container {
     display: block;
 }
 

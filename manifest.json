@@ -2,11 +2,14 @@
     "name": "YandexMusic for mopidy",
     "description": "Yandex Music for Mopidy",
     "version": "1.0",
-    "manifest_version": 3,
+    "manifest_version": 3,    
     "permissions": [
         "activeTab",
-        "scripting"
+        "scripting",
+        "storage"        
     ],
+    "author":"Irokez Petrovic <irokezpetrovic@gmail.com>",
+    
     "content_scripts": [
         {
             "matches": [
@@ -28,8 +31,7 @@
     },
     "web_accessible_resources": [
         {
-            "resources": [
-                "/icons/*.png",
+            "resources": [                
                 "/icons/*.svg"
             ],
             "matches": [                
