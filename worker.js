@@ -19,7 +19,7 @@ class Mopidy {
                 }
             }
         })
-        
+
         this._url = "";
         this._reconnectWs();
     }
@@ -35,7 +35,7 @@ class Mopidy {
             }, 100);
             return;
         }
-        const url = this._url + "/mopidy/ws";
+        const url = "ws://"+this._url + "/mopidy/ws";
         console.log("Connect to " + url);
         try {
             const ws = new WebSocket(url);
